@@ -1,0 +1,14 @@
+[Unit]
+Description=A2DP Bluetooth Agent
+After=bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+ExecStart=/usr/bin/python -u /usr/local/bin/bluetooth-a2dp-agent.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=A2DP-Agent
+User=root
+
+[Install]
+WantedBy=multi-user.target

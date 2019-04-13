@@ -8,8 +8,7 @@ Dependencies:
 - [libfdk-aac.git](https://github.com/mstorsjo/fdk-aac)
 - [bluez-alsa](https://github.com/Arkq/bluez-alsa)
 
-Installation:
-#### `libfdk-aac`
+####  Install libfdk-aac
 ```
 git clone https://github.com/mstorsjo/fdk-aac.git
 cd fdk-aac
@@ -18,7 +17,7 @@ make -j4
 # sudo make install
 ```
 
-#### `bluez-alsa`
+#### Install bluez-alsa
 ```
 git clone https://github.com/Arkq/bluez-alsa.git
 cd bluez-alsa

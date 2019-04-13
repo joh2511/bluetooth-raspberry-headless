@@ -63,5 +63,16 @@ power on
 discoverable on
 ```
 
+## Notes
+
+If you have multiple sound cards installed (e.g. hifiberry) you need to speciy which one is used. Use `aplay -l` to identify number of card. Afterwards specify default card for `aplay` in `/etc/asound.conf`:
+```
+pcm.!default  {
+ type hw card 1
+}
+ctl.!default {
+ type hw card 1
+}
+```
 
 
